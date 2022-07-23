@@ -1,10 +1,36 @@
-/* #category h2{
-  font-size: 30px;
+/* category */
+h2, h3 {
   font-family: "ibarra_italic";
-
 }
-#category h3{
-  font-size: 30px;
-  font-family: "ibarra_italic";
 
-} */
+.main_cate {
+  width: 1200px;
+  text-align: left;
+  margin: 30px 0 0;
+  text-decoration: underline;
+}
+.main_cate .main_title {
+  padding: 0 20px;
+  font-size: 50px;
+}
+
+.btn_cate_box {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn_cate {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid var(--color-main);
+  border-radius: 20px;
+  font-size: 30px;
+}
+
+
+.btn_cate:hover {
+  background-color: var(--color-main);
+  color: white;
+}
