@@ -1,0 +1,141 @@
+.book{
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+}
+.book_bc a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.book_detail-cart {
+  text-align: center;
+}
+
+.book_detail-cart input{
+  all:unset;
+  padding:10px;
+  background-color: var(--color-point);
+  border-radius: 20px;
+  color: white;
+  width: 140px;
+  text-align: center;
+}
+.book_detail-cart input:hover{
+  font-weight: 900;
+}
+@media (min-width:960px) {
+  .book_bc{
+    font-size: 20px;
+  }
+  .book_detail-1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .book_detail-img{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .book_img-1{
+    grid-row:1/-1 ;
+  }
+  .book_img-1 img{
+    width: 30vw;
+  }
+  .book_img-2 img,.book_img-3 img, .book_img-4 img{
+    width: 5vw;
+  }
+  div[class*="book_img"]{
+    border: 1px solid var(--color-point);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div[class*="book_img"]:not(:first-child):hover img{
+    width: 6vw;
+    transition:all 0.5s;
+  }
+  .book_detail-img{
+    padding:20px;
+    border-right: dashed 1px var(--color-point);
+  }
+  .book_detail-price{
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .book_detail-name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+
+  .book_detail-2{
+    text-align: center;
+    min-height: 200px;
+  }
+  
+}
+@media (max-width:959px) {
+
+  .book_img-1 img{
+    width: 60vw;
+  }
+  .book_img-2 img{
+    width: 15vw;
+  }
+  .book_img-3 img{
+    width: 15vw;
+  }
+  .book_img-4 img{
+    width: 15vw;
+  }
+  .book_bc{
+    font-size: 25px;
+  }
+  .book_detail-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .book_detail-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7fr 3fr;
+    gap: 10px;
+  }
+  .book_img-1{
+    grid-column: 1/-1;
+  }
+  div[class*="book_img-"]{
+    border: 1px solid var(--color-point);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .book_detail-add{
+    font-size: 25px;
+    text-align: center;
+  }
+  .book_detail-add div{
+    padding:10px;
+  }
+  div[class*="book_img"]:not(:first-child):hover img{
+    width: 16vw;
+    transition:all 0.5s;
+  }
+  .book_detail-name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px ;
+  }
+  
+
+}

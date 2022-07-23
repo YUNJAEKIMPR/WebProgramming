@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebProgramming</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <!-- header intro img  -->
+    <div class="intro">
+      welcome to the BookStore
+    </div>
+      <!-- header nav -->
+
+    <nav class="nav">
+      <h1>
+        <a class="nav_homelink" href="../index.html">
+          <img src="../img/book-g0aa20adb2_1280.png" alt="move to the homepage">
+          <span>
+            BookStore
+          </span>
+          
+          <!-- (Clker-Free-Vector-Images,july 2014) -->
+        </a>
+      </h1>
+      <input class="nav_btn"
+      type="checkbox" name="nav_btn" id="nav_btn">
+      <div class="nav_list">
+        <ul>
+          <li>
+            <a href="../index.html">
+              Home
+            </a>
+          </li>
+          <li><a href="../index.html#category_1">art and essay</a></li>
+          <li><a href="../index.html#category_2">biographies</a></li>
+          <li><a href="../index.html#category_3">business </a></li>
+          <li><a href="./category.html">category page</a></li>
+          <li><a href="./book.html">book detail</a></li>
+          <li><a href="./contact.html">contact us</a></li>
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+  <!-- contact form  -->
+  <main class="contact_main">
+    <section class="contact_section">
+      <div class="contact_head">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact_form">
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return false">
+          <div class="contact_purpose">
+            <div class="label">
+              <label for="contact_purpose">
+                contact purpose
+              </label>
+            </div>
+            <div class="input">
+              <select name="contact_purpose" id="contact_purpose">
+                <option value="purpose_sell">
+                  I want to sell books
+                </option>
+                <option value="purpose_buy">
+                  I want to buy books
+                </option>
+              </select>
+
+            </div>
+           
+          </div>
+          <div class="contact_name">
+            <div class="label">
+              <label for="contact_name">
+                name
+              </label>
+            </div>
+            <div class="input">
+              <input type="text" name="contact_name" id="contact_name" required maxlength="50">
+            </div>
+          </div>
+            <div class="contact_email">
+              <div class="label">
+                <label for="contact_email">
+                  email
+                </label>
+              </div>
+              <div class="input">
+                <input type="email" name="contact_email" id="contact_email" required>
+              </div>
+            </div>
+          <div class="contact_phone">
+            <div class="label">
+              <label for="contact_phone">phone</label>
+            </div>
+            <div class="input">
+              <input type="tel" name="contact_phone" id="contact_phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+            </div>
+          </div>
+          <div class="contact_method">
+            <div class="label">
+              <label>
+                How can we contact you? 
+              </label>
+            </div>
+            <div class="label">
+              <label for="method_phone">
+                by phone
+              </label>
+            </div>
+            <div class="input">
+              <input type="checkbox" name="method[]" id="method_phone">
+            </div>
+            <div class="label">
+              <label for="method_email">
+                by email
+              </label>
+            </div>    
+            <div class="input">
+              <input type="checkbox" name="method[]" id="method_email">
+            </div>   
+          </div>
+            <div class="contact_news">
+              <div class="label">
+                <label>
+                  Do you want to receive our weekly newsletter?
+                </label>
+              </div>
+              <div class="label">
+                <label for="news_yes">
+                  yes
+                </label>
+              </div>
+              <div class="input">
+                <input type="radio" name="contact_news" id="news_yes" checked>
+              </div> 
+              <div class="label">
+                <label for="news_no">
+                  no
+                </label>
+              </div>
+              <div class="input">
+                <input type="radio" name="contact_news" id="news_no">
+              </div>
+            </div>
+            <div class="contact_note">
+              <div class="label">
+                <label for="contact_note">
+                  note
+                </label>
+              </div>
+              <div class="input">
+                <textarea name="contact_note" id="contact_note" cols="30" rows="5" placeholder="leave your msg here"></textarea>
+              </div>
+            </div>
+            <div class="contact_file">
+              <div class="label">
+                <label for="contact_file">
+                  attachment
+                </label>
+              </div>
+              <div class="input">
+                <input type="file" name="contact_file" id="contact_file">
+              </div>
+            </div>
+            <div class="contact_btn">
+              <div class="input">
+                <input type="reset" value="clear" class="btn_contact">
+    
+              </div>
+              <div class="input">
+                <input type="submit" value="submit" class="btn_contact">
+              </div>
+            </div>
+             
+ 
+        </form>
+
+      </div>
+    </section>
+  
+
+      
+  </main>
+  <!-- footer  -->
+  <footer>
+    <table>
+      <tr>
+        <td>
+          <a href="#">
+            About Us
+          </a></td>
+        <td>
+          <a href="#">
+            Privacy Policy        
+          </a>
+        </td>
+        <td>
+          <a href="#">
+            Terms   
+          </a>
+        </td>
+        <td>
+          <a href="#">
+            Copyright
+          </a>
+        </td>
+        <td>
+          <a href="./contact.html">
+            Contact Us
+          </a>
+        </td>
+      </tr>
+    </table>
+  </footer>
+</body>
+</html>

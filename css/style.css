@@ -1,0 +1,201 @@
+/* css links */
+@import url(./index.css);
+@import url(./category.css);
+@import url(./book.css);
+@import url(./contact.css);
+
+/* font  */
+@font-face {
+  font-family: "ibarra_italic";
+  src: url(../font/static/IbarraRealNova-Italic.ttf);
+}
+
+@font-face {
+  font-family: "ibarra";
+  font-weight: 200;
+  src: url(../font/static/IbarraRealNova-Medium.ttf);
+}
+@font-face {
+  font-family: "ibarra";
+  font-weight: 400;
+  src: url(../font/static/IbarraRealNova-Regular.ttf);
+}
+@font-face {
+  font-family: "ibarra";
+  font-weight: 600;
+  src: url(../font/static/IbarraRealNova-SemiBold.ttf);
+}
+@font-face {
+  font-family: "ibarra";
+  font-weight: 800;
+  src: url(../font/static/IbarraRealNova-Bold.ttf);
+}
+@font-face {
+  font-family: "opensans";
+  font-weight: 300;
+  src: url(../font/static/OpenSans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: "opensans";
+  font-weight: 400;
+  src: url(../font/static/IbarraRealNova-Medium.ttf);
+}
+@font-face {
+  font-family: "opensans";
+  font-weight: 600;
+  src: url(../font/static/OpenSans/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: "opensans";
+  font-weight: 700;
+  src: url(../font/static/IbarraRealNova-Bold.ttf);
+}
+
+/* variables  */
+
+:root {
+  --color-main: #A0CD60;
+  --color-sub: #00A200;
+  --color-dark: #1C646D;
+  --color-point: #38184C;
+  --color-text: #1F0802;
+  --color-lighter: #DC9C86;
+  --color-light-bd: #FFE6D6;
+  --color-light-bg: #FFF5ED;
+
+  --font-title: 44px;
+  --font-subtitle: 32px;
+  --font-tag: 26px;
+  --font-larger: 20px;
+  --font-text: 18px;
+
+  --height-toolbar: 55px;
+}
+
+
+/* reset */
+
+body {
+  margin: 0;
+  font-family: "opensans";
+  min-height: 150vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  font-family: "ibarra";
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong, em {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl { margin: 0; }
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th { font-weight: normal; }
+
+address { font-style: inherit; }
+
+
+/* screen reader only  */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+
+
+/* category */
+h2, h3 {
+  font-family: "ibarra_italic";
+}
+
+.main_cate {
+  width: 1200px;
+  text-align: left;
+  margin: 30px 0 0;
+  text-decoration: underline;
+}
+.main_cate .main_title {
+  padding: 0 20px;
+  font-size: 50px;
+}
+
+.btn_cate_box {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn_cate {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid var(--color-main);
+  border-radius: 20px;
+  font-size: 30px;
+}
+
+
+.btn_cate:hover {
+  background-color: var(--color-main);
+  color: white;
+}
+
+
+/* more - arrow */
+
+.more_book_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin: 30px auto;
+  max-width: 250px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  font-size: 22px;
+}
+
+.more_book_box span { display: inherit; }
+
+.more_book_box:hover {
+  border: 1px solid var(--color-main);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}

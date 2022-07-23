@@ -1,0 +1,364 @@
+.intro{
+  background-image: url(../img/pexels-pixabay-159711.jpg);
+  /* (pixabay, feb 2016) */
+  background-position: center;
+  filter: grayscale(100%);
+  color: white;
+  font-size: 3vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ibarra_italic";
+
+}
+/* nav sticky z index */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: var(--height-toolbar);
+  background-color: var(--color-main);
+  font-family:"ibarra";
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 2px 2px gray;
+  
+}
+.nav h1{
+  font-family: "ibarra_italic";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_homelink img{
+  width: 60px;
+  vertical-align: -20px;
+}
+
+.nav_list a:hover, .nav_homelink span:hover{
+  font-weight: 900;
+  color: var(--color-point);
+
+}
+footer{
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+}
+footer td{
+  padding:0 10px
+}
+footer a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.category_book-name a:hover, .category_book-mb a:hover{
+  font-weight: bold;
+}
+main{
+  /* min-width: 100vh; */
+}
+
+/* 카드뷰 */
+section.category { padding: 80px 0; width: 1200px; }
+section.category .card_list { margin-top: 50px; text-align: center; }
+section.category .card_list li { 
+    display: inline-block;
+    width: calc(95%/4);
+    height: 400px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align-last: left;
+ }
+section.category .card_list li .card {
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 10px #ddd;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+}
+section.category .card_list li .card .card_img { height: 200px; }
+section.category .card_list li .card .card_img img { width: 100%; height: 100%; }
+
+section.category .card_list li .card .card_info {
+    padding: 8px;
+    height: 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+section.category .card_list li .card .card_info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+section.category .card_list li .card .card_info p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+section.category .card_list li .card .card_info .star_box {}
+section.category .card_list li .card .card_info .star_box img {
+    width: 16px; margin-right: -3px;
+}
+section.category .card_list li .card .card_info .star_box span {
+    font-size: 0.8rem; line-height: 16px;
+}
+section.category .card_list li .card .card_info .btn {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    padding: 10px 20px;
+    background-color: var(--color-main);
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* 상품항목에 마우스 올렸을 때, 카드를 위로 띄우는 효과 */
+section.category .card_list li .card:hover {
+    transform: translateY(-20px);   
+    transition: all 0.4s;
+    box-shadow: 15px 15px 5px #ddd;
+}
+
+
+@media (min-width:960px) {
+
+  /* header  */
+  .intro{
+    height: 30vh;
+
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;  
+    padding: 0 25px;
+  }
+  .nav_btn{
+    display: none;
+  }
+  .nav_list ul li{
+    display: inline-block;
+    padding-left:50px;
+  }
+  .nav_list ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /* main  */
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  section[class*="category_"]{
+    border: 1px solid var(--color-point);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:10px;
+  }
+  .category_figure{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .category_book{
+    border: 1px solid var(--color-point);
+    padding:10px;
+  }
+  div[class*="category_to"] a::after{
+    content: ">>";
+  }
+  div[class*="category_to"]:hover{
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  .category_to_category{
+    text-align: right;
+    position:relative;
+    right: 10px;
+  }
+
+  section[class*="category_"]{
+    font-size: 20px;
+  }
+  section[class*="category_"] h2{
+    font-size: 2.5vw;
+  }
+  section[class*="category_"] h2, .category_to_category{
+    font-family: "ibarra_italic";
+  }
+  .category_book-name{
+    font-size: 25px;
+  }
+  .category_book-img img{
+    width: 10vw;
+  }
+  .category_book-img img:hover{
+    width: 11vw;
+    transition: all 1s;
+  }
+
+  .category_book-mb{
+    display: none;
+  }
+
+
+
+ 
+
+}
+
+
+@media (max-width:959px) {
+  /* header  */
+  .intro{
+    display: none;
+  }
+  
+  .nav_list{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 3vw;
+  }
+  .nav_btn{
+    all:unset;
+    background-image: url(../img/menu_FILL0_wght400_GRAD0_opsz48.svg);
+    /* (googlefont) */
+    background-size: cover;
+    background-position: center;
+
+    height: var(--height-toolbar);
+    width: 10vw;
+  }
+  .nav_btn:checked+.nav_list{
+    display: block;
+    position:absolute;
+    top:var(--height-toolbar);
+    left: -0.1vw;
+  
+    background-color: var(--color-sub);
+    box-shadow: 0 2px 2px black;
+    transition: all 1s;
+  }
+  .nav_btn:checked{
+    background-image: url(../img/close_FILL0_wght400_GRAD0_opsz48.svg);
+    /* googlefont */
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    
+  }
+  .nav_list ul{
+    width: 100vw;
+    text-align: center;
+  }
+  .nav_list a{
+    width: 100vw;
+    
+  }
+  .nav_list li:not(:last-child){
+    border-bottom: 1px solid white;
+  }
+  .nav_list li{
+    padding: 1em;
+  }
+
+  /* main  */
+  .category_book-img img{
+    width: 50vw;
+    
+  }
+  .category_book-img img:hover{
+   width: 55vw;
+   transition: all 1s;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:10vh;
+    gap:10vh;
+
+  }
+  section[class*="category_"] {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .category_figure{
+    border: 1px solid var(--color-point);
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  section[class*="category_"] h2{
+    font-family: "ibarra_italic";
+    font-size: 30px;
+  }
+  .category_book-mb{
+    font-size: 25px;
+  }
+  .category_to_book, .category_to_category{
+    font-size: 20px;
+    text-align: right;
+  }
+  .category_to_category{
+    font-size: 25px;
+    font-family: "ibarra_italic";
+  }
+  .category_to_book::after, .category_to_category::after{
+    content: ">>";
+  }
+  .category_to_category:hover, .category_to_book:hover{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .category_book-name{
+    display: none;
+  }
+
+
+  footer{
+    justify-content: center;
+    padding-right: 0;
+  }
+
+
+  section.category { width: 100%; }
+  .home { 
+    padding: 0; 
+    gap: 0;
+  }
+
+  section.category .card_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section.category .card_list li {
+    min-width: 260px;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  section.category .card_list li .card {
+  }
+}
+
